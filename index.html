@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sameer</title>
+<meta name="description" content="Personal site of Sameer. Under construction.">
+<style>
+  /* Layout: one name, one quiet line, left-aligned, sitting a third of the way down the page */
+  :root {
+    --bg: #f6f5f2;
+    --fg: #1c1d1f;
+    --muted: #6f7074;
+    --rule: #d9d8d4;
+    --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151618;
+      --fg: #ecebe7;
+      --muted: #9a9ba0;
+      --rule: #34353a;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { height: 100%; margin: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    padding-left: max(24px, env(safe-area-inset-left, 0px));
+    padding-right: max(24px, env(safe-area-inset-right, 0px));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+  }
+
+  main {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding-bottom: 12vh;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(2.75rem, 9vw, 5rem);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin: 0 0 1.25rem;
+    text-wrap: balance;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    width: 3rem;
+    margin: 0 0 1.25rem;
+  }
+
+  p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+  }
+</style>
+</head>
+<body>
+  <main>
+    <h1>Sameer</h1>
+    <hr>
+    <p>Under construction.</p>
+  </main>
+</body>
+</html>
